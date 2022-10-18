@@ -1,0 +1,24 @@
+<p>Listado de Heroes</p>
+
+<!-- noBorrado es la referencia local, esto solo es en el lado del template-->
+<div *ngIf="heroeBorrado; else noBorrado"> 
+  <h3>Héroe Borrado: <small> {{ heroeBorrado }} </small></h3>
+</div>
+
+<!-- #noBorrado es hacia donde está haciendo la referencia -->
+<ng-template #noBorrado>
+  <h3>No ha borrado nada.</h3>
+</ng-template>
+
+<button (click)="borrarHeroe()">
+  Borrar Héroe
+</button>
+
+<ul>
+  <!-- es lo mismo, el nombre en singular es un elemento y el plural es el arreglo que queremos recorrer -->
+  <li *ngFor="let heroe of heroes; let i = index">
+    {{ i + 1 }} - {{ heroe }}
+  </li>
+</ul>
+
+
