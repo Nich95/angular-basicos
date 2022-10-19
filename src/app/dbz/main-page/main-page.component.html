@@ -8,9 +8,11 @@
     <h3>Personajes</h3>
     <hr>
     <ul>
-      <li>Krillin - 700</li>
-      <li>Goku - 15,000</li>
-      <li>Vegeta - 8,000</li>
+      <!-- el "| number" le decimos que se muestre en la vista como un numero  -->
+      <!-- | es un pipe y en angular se usan para manejar la visual de la información -->
+      <li *ngFor="let personaje of personajes">
+        {{ personaje.nombre }} - {{ personaje.poder | number }}
+      </li>
     </ul>
   </div>
 
