@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
-// aqui van las interfaces
-interface Personaje {
-  nombre: string;
-  poder: number;
-}
+import { Personaje } from '../interfaces/dbz.interface';
+
+// aqui van las interfaces en caso las tenga que declarar aca
+// interface Personaje {
+//   nombre: string;
+//   poder: number;
+// }
 
 @Component({
   selector: 'app-main-page',

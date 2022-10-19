@@ -5,7 +5,9 @@
 <div class="row">
   
   <div class="col">
-    <app-personajes></app-personajes>
+    <!-- con las llaves cuadradas lo vamos a asociar a una propiedad del component -->
+    <app-personajes [personajes]="personajes">
+    </app-personajes>
   </div>
 
   <div class="col">
