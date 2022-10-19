@@ -5,15 +5,7 @@
 <div class="row">
   
   <div class="col">
-    <h3>Personajes</h3>
-    <hr>
-    <ul>
-      <!-- el "| number" le decimos que se muestre en la vista como un numero  -->
-      <!-- | es un pipe y en angular se usan para manejar la visual de la información -->
-      <li *ngFor="let personaje of personajes">
-        {{ personaje.nombre }} - {{ personaje.poder | number }}
-      </li>
-    </ul>
+    <app-personajes></app-personajes>
   </div>
 
   <div class="col">
