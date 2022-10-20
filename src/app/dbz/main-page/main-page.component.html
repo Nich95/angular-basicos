@@ -11,8 +11,9 @@
   </div>
 
   <div class="col">
-    <app-agregar [personajes]="personajes"
-                  [nuevo]="nuevo">
+    <!-- se llama al evento al igual como se llama el evento (click) -->
+    <app-agregar [nuevo]="nuevo"
+                  (onNuevoPersonaje)="agregarNuevoPersonaje( $event )">
     </app-agregar>
   </div>
 
