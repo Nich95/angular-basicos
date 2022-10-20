@@ -11,29 +11,9 @@
   </div>
 
   <div class="col">
-    <h3>Agregar <small>{{ nuevo.nombre }}</small> </h3>
-    <hr>
-
-    <form (ngSubmit)="agregar()">
-      <!-- con las llaves cuadradas le estamos diciendo que puede tomar valores del .ts -->
-      <!-- con los parentesis le digo que quiero emitir el evento -->
-      <!-- todo esto cambia en tiempo real -->
-      <input type="text" 
-              placeholder="Nombre"
-              name="nombre"
-              [(ngModel)]="nuevo.nombre"
-      />
-
-      <input type="number" 
-              placeholder="Poder" 
-              name="poder"
-              [(ngModel)]="nuevo.poder"
-      />
-
-      <button type="submit">
-        Agregar
-      </button>
-    </form>
+    <app-agregar [personajes]="personajes"
+                  [nuevo]="nuevo">
+    </app-agregar>
   </div>
 
 </div>
