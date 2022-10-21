@@ -6,7 +6,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarComponent } from './agregar/agregar.component';
 
-import { DbzService } from './services/debz.service';
+import { DbzService } from './services/dbz.service';
 
 
 
