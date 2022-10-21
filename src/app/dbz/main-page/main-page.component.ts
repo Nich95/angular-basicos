@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { Personaje } from '../interfaces/dbz.interface';
 
-import { DbzService } from '../services/debz.service';
+import { DbzService } from '../services/dbz.service';
 
 // aqui van las interfaces en caso las tenga que declarar aca
 // interface Personaje {
