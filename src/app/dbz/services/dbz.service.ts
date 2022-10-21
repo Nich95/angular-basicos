@@ -29,7 +29,10 @@ export class DbzService {
     return [...this._personajes]; // esto es una buena constumbre de javascriopt
   }
 
-  constructor() {
-    console.log('Servicio inicializado...');
+  constructor() {}
+
+  // recibe un argumento de tipo personaje
+  agregarPersonaje( personaje: Personaje ) {
+    this._personajes.push( personaje ); // esto tambien modifica el get y en donde sea que se llame el get tambien se modifica
   }
 }
