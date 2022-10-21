@@ -6,15 +6,12 @@
   
   <div class="col">
     <!-- con las llaves cuadradas lo vamos a asociar a una propiedad del component -->
-    <app-personajes [personajes]="personajes">
-    </app-personajes>
+    <app-personajes></app-personajes>
   </div>
 
   <div class="col">
     <!-- se llama al evento al igual como se llama el evento (click) -->
-    <app-agregar [nuevo]="nuevo"
-                  (onNuevoPersonaje)="agregarNuevoPersonaje( $event )">
-    </app-agregar>
+    <app-agregar [nuevo]="nuevo"></app-agregar>
   </div>
 
 </div>
